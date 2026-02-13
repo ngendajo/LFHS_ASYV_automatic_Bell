@@ -38,8 +38,9 @@ const int h12D1 = 15; const int m12D1 = 55;
 const int h13D1 = 16; const int m13D1 = 15;
 const int h14D1 = 17; const int m14D1 = 15;
 const int h15D1 = 18; const int m15D1 = 00;
-const int h16D1 = 18; const int m16D1 = 50;
-const int h17D1 = 20; const int m17D1 = 50;
+const int h16D1 = 18; const int m16D1 = 40;
+const int h17D1 = 18; const int m17D1 = 50;
+const int h18D1 = 20; const int m18D1 = 50;
 ////////////////////////////////////////////////////
 //---- TUESDAY bell ------//
 const int h1D2 = 6; const int m1D2 = 30;
@@ -56,8 +57,9 @@ const int h11D2 = 14; const int m11D2 = 50;
 const int h12D2 = 15; const int m12D2 = 00;
 const int h13D2 = 17; const int m13D2 = 15;
 const int h14D2 = 18; const int m14D2 = 00;
-const int h15D2 = 18; const int m15D2 = 50;
-const int h16D2 = 20; const int m16D2 = 50;
+const int h15D2 = 18; const int m15D2 = 40;
+const int h16D2 = 18; const int m16D2 = 50;
+const int h17D2 = 20; const int m17D2 = 50;
 ////////////////////////////////////////////////////
 //---- WEDNESDAY bell ------//
 const int h1D3 = 6; const int m1D3 = 30;
@@ -75,9 +77,9 @@ const int h11D3 = 15; const int m11D3 = 55;
 const int h12D3 = 16; const int m12D3 = 15;
 const int h13D3 = 17; const int m13D3 = 15;
 const int h14D3 = 18; const int m14D3 = 00;
-const int h15D3 = 18; const int m15D3 = 50;
-const int h16D3 = 20; const int m16D3 = 50;
-const int h17D3 = 21; const int m17D3 = 30;
+const int h15D3 = 18; const int m15D3 = 40;
+const int h16D3 = 18; const int m16D3 = 50;
+const int h17D3 = 20; const int m17D3 = 50;
 ////////////////////////////////////////////////////
 //---- THURSDAY bell ------//
 const int h1D4 = 6; const int m1D4 = 30;
@@ -91,9 +93,12 @@ const int h8D4 = 12; const int m8D4 = 30;
 const int h9D4 = 12; const int m9D4 = 45;
 const int h10D4 = 13; const int m10D4 = 45;
 const int h11D4 = 14; const int m11D4 = 50;
-const int h12D4 = 18; const int m12D4 = 00;
-const int h13D4 = 18; const int m13D4 = 50;
-const int h14D4 = 19; const int m14D4 = 50;
+const int h12D4 = 15; const int m12D4 = 15;
+const int h13D4 = 18; const int m13D4 = 00;
+const int h14D4 = 18; const int m14D4 = 40;
+const int h15D4 = 18; const int m15D4 = 50;
+const int h16D4 = 19; const int m16D4 = 50;
+const int h17D4 = 20; const int m17D4 = 55;
 ////////////////////////////////////////////////////
 //---- FRIDAY bell ------//
 const int h1D5 = 6; const int m1D5 = 30;
@@ -197,6 +202,7 @@ if (H == h14D1 && M == m14D1 && S == 0) { for (i = 0; i < Lenght; i++) { digital
 if (H == h15D1 && M == m15D1 && S == 0) { for (i = 0; i < Lenght; i++) { digitalWrite(bell, LOW); delay(1000); } digitalWrite(bell, HIGH); i = 0; }
 if (H == h16D1 && M == m16D1 && S == 0) { for (i = 0; i < Lenght; i++) { digitalWrite(bell, LOW); delay(1000); } digitalWrite(bell, HIGH); i = 0; }
 if (H == h17D1 && M == m17D1 && S == 0) { for (i = 0; i < Lenght; i++) { digitalWrite(bell, LOW); delay(1000); } digitalWrite(bell, HIGH); i = 0; }
+if (H == h18D1 && M == m18D1 && S == 0) { for (i = 0; i < Lenght; i++) { digitalWrite(bell, LOW); delay(1000); } digitalWrite(bell, HIGH); i = 0; }
 }
 ////////////////////////////////////// DAY TWO //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -220,6 +226,7 @@ if (H == h13D2 && M == m13D2 && S == 0) { for (i = 0; i < Lenght; i++) { digital
 if (H == h14D2 && M == m14D2 && S == 0) { for (i = 0; i < Lenght; i++) { digitalWrite(bell, LOW); delay(1000); } digitalWrite(bell, HIGH); i = 0; }
 if (H == h15D2 && M == m15D2 && S == 0) { for (i = 0; i < Lenght; i++) { digitalWrite(bell, LOW); delay(1000); } digitalWrite(bell, HIGH); i = 0; }
 if (H == h16D2 && M == m16D2 && S == 0) { for (i = 0; i < Lenght; i++) { digitalWrite(bell, LOW); delay(1000); } digitalWrite(bell, HIGH); i = 0; }
+if (H == h17D2 && M == m17D2 && S == 0) { for (i = 0; i < Lenght; i++) { digitalWrite(bell, LOW); delay(1000); } digitalWrite(bell, HIGH); i = 0; }
 }
 ////////////////////////////////////// DAY three //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -266,6 +273,9 @@ if (H == h11D4 && M == m11D4 && S == 0) { for (i = 0; i < Lenght; i++) { digital
 if (H == h12D4 && M == m12D4 && S == 0) { for (i = 0; i < Lenght; i++) { digitalWrite(bell, LOW); delay(1000); } digitalWrite(bell, HIGH); i = 0; }
 if (H == h13D4 && M == m13D4 && S == 0) { for (i = 0; i < Lenght; i++) { digitalWrite(bell, LOW); delay(1000); } digitalWrite(bell, HIGH); i = 0; }
 if (H == h14D4 && M == m14D4 && S == 0) { for (i = 0; i < Lenght; i++) { digitalWrite(bell, LOW); delay(1000); } digitalWrite(bell, HIGH); i = 0; }
+if (H == h15D4 && M == m15D4 && S == 0) { for (i = 0; i < Lenght; i++) { digitalWrite(bell, LOW); delay(1000); } digitalWrite(bell, HIGH); i = 0; }
+if (H == h16D4 && M == m16D4 && S == 0) { for (i = 0; i < Lenght; i++) { digitalWrite(bell, LOW); delay(1000); } digitalWrite(bell, HIGH); i = 0; }
+if (H == h17D4 && M == m17D4 && S == 0) { for (i = 0; i < Lenght; i++) { digitalWrite(bell, LOW); delay(1000); } digitalWrite(bell, HIGH); i = 0; }
 }
 ////////////////////////////////////// DAY FIVE //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
